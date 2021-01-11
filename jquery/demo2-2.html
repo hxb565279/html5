@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</head>
+<body>
+<p>这是div前面的p元素</p>
+<div id="dv">
+    <p> 这是div中的第一个p元素</p>
+    <ul>
+        <li>这是第一个li元素</li>
+    </ul>
+    <li>
+        <p>这是第二个li元素的p元素</p>
+    </li>
+   <p>这是div的第二个p元素</p>
+</div>
+<p>这是div后面的第一个p元素</p>
+<p>这是div后面的第二个p元素</p>
+<p>这是div后面的第三个p元素</p>
+<script>
+    // $('#dv>p').css('backgroundColor','red');
+    //  $('#dv p').css('backgroundColor','green');
+    //  $('#dv').find('p').css('backgroundColor','yellow');
+     $('#dv+p').css('backgroundColor','red');
+</script>
+</body>
+</html>

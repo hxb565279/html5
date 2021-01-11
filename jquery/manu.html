@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+<ul class="menu_list">
+    <li>
+        <p class="menu_head">目标管理</p>
+        <div class="menu_body">
+            <a href="#">主题空间</a>
+            <a href="#">项目任务</a>
+            <a href="#">工作计划</a>
+            <a href="#">日程事件</a>
+            <a href="#">时间视图</a>
+        </div>
+    </li>
+    <li>
+        <p class="menu_head">会议管理</p>
+        <div class="menu_body">
+            <a href="#">主题空间</a>
+            <a href="#">会议安排</a>
+            <a href="#">待开会议</a>
+            <a href="#">已开会议</a>
+            <a href="#">会议资源</a>
+        </div>
+    </li>
+    <li>
+        <p class="menu_head">知识社区</p>
+        <div class="menu_body">
+            <a href="#">我的收藏</a>
+            <a href="#">知识广场</a>
+            <a href="#">文档中心</a>
+            <a href="#">我的博客</a>
+            <a href="#">文档库管理</a>
+        </div>
+    </li>
+    <li>
+        <p class="menu_head">我的工具</p>
+        <div class="menu_body">
+            <a href="#">综合查询</a>
+            <a href="#">通讯录</a>
+            <a href="#">便签</a>
+            <a href="#">计算器</a>
+            <a href="#">万年历</a>
+            <a href="#">常用链接</a>
+        </div>
+    </li>
+</ul>
+<script>
+    //隐藏所有二级菜单
+    $('.menu_head+div').hide();
+    //显示当前,隐藏其他
+    $('.menu_head').click(function () {
+        $(this).css('backgroundImage', 'url(../img/pro_down.png)');
+        //显示当前菜单的子菜单
+        $(this).next('div').show();
+        let parentLi = $(this).parent('li');
+        let lis = parentLi.siblings('li');
+        lis.children('p').css('backgroundImage', 'url(../img/pro_left.png)');
+        //隐藏其他主菜单下的子菜单
+        lis.children('div').hide();
+    });
+</script>
+</body>
+</html>
