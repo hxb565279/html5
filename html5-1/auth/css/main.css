@@ -1,0 +1,21 @@
+
+#contains{
+    margin-left: 500px;
+    margin-top: 20px;
+    background-color: #999999
+}
+
+select{
+    float: left;
+    width: 60px;
+    height: 100px;
+}
+
+#btnDv{
+    width: 50px;
+    float: left;
+}
+
+#btnDv>input{
+    width: 50px;
+}
