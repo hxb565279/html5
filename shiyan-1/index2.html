@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style>
+
+        body {
+            font-size: 14px;
+            font-family: "Times New Roman",Times ,serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        h4 {
+            color: #666666;
+        }
+
+        nav, header, footer, #mainContent {
+            clear: both;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header div img {
+            float: left;
+        }
+
+        #hdes {
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        #hlogin {
+            margin-top: 50px;
+            float: right;
+        }
+
+        nav {
+            clear: both;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #666666;
+            height: 30px;
+            padding-left: 0px;
+            color: #ffffff;
+        }
+
+        nav ul li {
+            width: 80px;
+            float: left;
+            text-align: center;
+        }
+
+        nav ul li hover {
+            background-color: #333333;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        #left {
+            width: 700px;
+            float: left;
+        }
+
+        #right {
+            width: 300px;
+            float: left;
+        }
+
+        #left section:nth-child(1) img {
+            width: 600px;
+            height: 300px;
+        }
+
+        #button {
+
+        }
+
+        #button header {
+            padding: 10px;
+        }
+
+        #button figure {
+            width: 640px;
+            height: 150px;
+        }
+
+        #button figure img {
+            clear: both;
+            width: 200px;
+            height: 150px;
+            float: left;
+            margin-left: -20px;
+            margin-right: 10px;
+        }
+
+        #button rigure figcaption {
+            width: 400px;
+            height: 150px;
+            float: left;
+        }
+        #right h1{
+            font-size: 16px;
+            font-weight:bold;
+            margin-bottom: 8px;
+        }
+        #right form p{
+            font-size: 12px;
+            margin-bottom: 20px;
+            width:270px;
+            border-bottom: 1px solid #b7ddf2;
+            padding-bottom: 10px;
+        }
+        #right aside:nth-child(1){
+            height:250px;
+        }
+        #login label{
+            width: 60px;
+            display:block;
+            text-align: right;
+            float: left;
+            border:1px solid #aacf34;
+            margin-top: 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+
+        #login input{
+            width: 200px;
+            float:left;
+            font-size: 12px;
+            border:1px  solid #aacf34;
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        #login input [type=button]{
+            margin-left: 60px;
+            width: 125px;
+            height: 31px;
+            background: #666666;
+            line-height: 31px;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+        #login input  :active{
+                    outline:thin solid #aaa;
+        }
+        #hotNews{
+            width: 300px;
+            height: 200px;
+        }
+        #hotNews ul li{
+            height: 35px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            margin-left: -25px;
+            font-size: 13px;
+        }
+
+        footer{
+            text-align: center;
+        }
+        footer p{
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<header>
+    <div><img src="./images/logo.png" alt="">
+        <p id="hdes">HTML5+CSS3</p>
+        <p id="hlogin">
+            <a target="_parent" href="">登录</a>
+            <a target="_parent" href="">注册</a>
+        </p>
+    </div>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="index2.html" target="_parent">首页</a></li>
+        <li><a href="index2.html" target="_parent">精彩视频</a></li>
+        <li><a href=".html" target="_parent">文章发布</a></li>
+    </ul>
+</nav>
+
+
+<div id="mainContent">
+    <div id="left">
+        <section>
+            <img src="./images/animate1.jpg" alt="">
+        </section>
+        <section id="button">
+            <header>最精彩内容</header>
+            <figure>
+                <a href="graffiWaall.html"><img src="./images/pic1.png" alt=""></a>
+
+                <tigcaption>
+                    <h3><a href="">漂亮的涂鸦墙 </a></h3>
+                    <p> CSS3所提供的动画功能,主要通过变形,转换和</p>
+                </tigcaption>
+
+
+            </figure>
+        </section>
+    </div>
+    <div id="right">
+
+
+        <form action="">
+            <aside>
+                <header>
+                    <h1>登录</h1>
+                       <p>请精准填写个人信息</p>
+                </header>
+                <div id="login">
+                    <label >用户名:</label>
+                    <input type="text" name="userName" id="userName">
+                    <label >密码:</label>
+                    <input type="password" name="password" id="password">
+                    <input type="button">
+                </div>
+            </aside>
+        </form>
+
+        <aside  id="hotNews">
+            <header>
+                <h3>热点文章</h3>
+            </header>
+            <ul>
+                <li></li>
+                <li></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </aside>
+        <aside></aside>
+    </div>
+</div>
+
+
+<footcr>
+
+
+
+
+
+</footcr>
+</body>
+</html>
